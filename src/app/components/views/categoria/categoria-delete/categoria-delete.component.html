@@ -1,5 +1,5 @@
 <form>
-  <h1>Nova Categoria</h1>
+  <h1>Deletar Categoria</h1>
   <mat-form-field class="form">
     <mat-label>Nome</mat-label>
     <input
@@ -7,7 +7,7 @@
       matInput
       type="text"
       name="nome"
-      placeholder="Ex. Computação"
+      disabled
     />
   </mat-form-field>
   <mat-form-field class="form">
@@ -17,17 +17,17 @@
       matInput
       type="text"
       name="descricao"
-      placeholder="Ex. Livros de Computação"
+      disabled
     ></textarea>
   </mat-form-field>
   <div class="buttons">
     <button
-      (click)="create()"
+      (click)="delete()"
       class="mat-elevation-z8"
       mat-stroked-button
       color="primary"
     >
-      Criar
+      Deletar
     </button>
     <button
       (click)="cancel()"
